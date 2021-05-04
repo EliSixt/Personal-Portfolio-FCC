@@ -1,0 +1,297 @@
+body {
+  padding: 3rem 0 0 0;
+  margin: 0;
+  background-image: linear-gradient(45deg, #ffffff, #6c9d87, #b0cece);
+}
+
+h1 {
+  font-family: "Kiwi Maru", serif;
+  font-size: 2.3rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  padding-left: ;
+  top: 0;
+  height: 3rem;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  background-image: linear-gradient(25deg,
+      #ffffff,
+      #ffffff,
+      #b0cece,
+      #b0cece,
+      #6c9d87);
+  z-index: 6;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#links {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+  width: 15rem;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+#projects {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+}
+
+/*Welcome Section*/
+#welcome-section,
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome {
+  background: ;
+  background-image: linear-gradient(230deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.6),
+      rgba(14, 105, 148, 1));
+  border-radius: 50%;
+  border-radius: 50%;
+  height: 30rem;
+  width: 30rem;
+  backdrop-filter: blur(0.4rem);
+  z-index: 5;
+}
+
+#circle1 {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  background-color: #b0cece;
+  background-image: linear-gradient(230deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 1));
+  position: absolute;
+  bottom: 15%;
+  left: 33%;
+  z-index: 2;
+}
+
+#circle2 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: blue;
+  background-image: linear-gradient(230deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.6));
+  position: absolute;
+  bottom: 55%;
+  left: 55%;
+  z-index: 3;
+}
+
+#circle3 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 55%;
+  right: 55%;
+  z-index: 3;
+}
+
+/*Project section*/
+#projects {
+  padding: 0 0 0 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-area: ;
+  grid-gap: 5px 5px;
+  align-items: center;
+  justify-items: center;
+  background-color: ;
+  text-decoration: none;
+  color: black;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: ;
+  margin: ;
+  background-color: rgba(176, 206, 206, 0.7);
+  border-radius: 10px;
+  height: auto;
+  width: 10rem;
+  font-size: 1.3em;
+}
+
+.project-tile:hover {
+  font-size: 1.33em;
+}
+
+#view-all {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 8rem;
+  width: 10rem;
+  border-radius: 20%;
+  background-color: #b0cece;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  font-size: 1.7em;
+}
+
+#view-all:hover {
+  font-size: 1.73em;
+}
+
+#arrow-down {
+  height: 5rem;
+  width: 5rem;
+}
+
+#icon {
+  height: 12rem;
+  width: 10rem;
+  margin: ;
+  border-radius: 10px 10px 0 0;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 15rem;
+}
+
+#profile-link {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #b0cece;
+  font-size: 1.5em;
+  height: 8rem;
+  width: 10rem;
+  border-radius: 20%;
+}
+
+#profile-link:hover {
+  color: white;
+  font-size: 1.7em;
+}
+
+@media only screen and (max-width:500px) {
+  #welcome-section {
+    padding: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #welcome {
+    height: 70vw;
+    width: 70vw;
+    text-align: center;
+    font-size: ;
+  }
+
+  #circle1 {
+    height: 70vw;
+    width: 70vw;
+  }
+
+  #circle2 {
+    height: 40vw;
+    width: 40vw;
+  }
+
+  #circle3 {
+    height: 40vw;
+    width: 40vw;
+  }
+
+  #projects {
+    padding: 3rem 0 0 0;
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 0 0;
+  }
+
+  .project-tile {
+    padding: 30px 0 0 0;
+  }
+
+  .project-tile, #icon {
+    width: 20vw;
+    height: 40vw;
+    background-color: rgba(176, 206, 206, 0.7);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+
+  .project-tile:hover {
+    font-size: 1em;
+  }
+
+  #view-all {
+    width: 20vw;
+    height: 15vw;
+    background-color: rgba(176, 206, 206, 0.7);
+    border-radius: 10px;
+    font-size: 1em;
+  }
+
+  #view-all:hover {
+    font-size: 1em;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 1rem 0 0 0;
+    margin: 0;
+  }
+}
